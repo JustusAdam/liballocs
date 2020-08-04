@@ -116,8 +116,6 @@ typedef uint16_t bigalloc_num_t;
 extern bigalloc_num_t *pageindex __attribute__((weak,visibility("protected")));
 extern bigalloc_num_t *__liballocs_pageindex __attribute__((weak));
 
-enum object_memory_kind __liballocs_get_memory_kind(const void *obj) __attribute__((visibility("protected")));
-
 void __liballocs_print_l0_to_stream_err(void) __attribute__((visibility("protected")));
 void __liballocs_report_wild_address(const void *ptr); //__attribute__((visibility("protected")));
 
